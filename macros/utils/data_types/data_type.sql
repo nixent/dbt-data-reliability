@@ -59,6 +59,9 @@
     {% do return("varchar") %}
 {% endmacro %}
 
+{% macro duckdb__edr_type_string() %}
+    {% do return("varchar") %}
+{% endmacro %}
 
 
 

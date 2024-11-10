@@ -38,3 +38,7 @@
 {% macro trino__edr_hour_of_week_expression(date_expr) %}
     date_format({{ date_expr }}, '%W%H')
 {% endmacro %}
+
+{% macro duckdb__edr_hour_of_week_expression(date_expr) %}
+    strftime({{ date_expr }}, '%W%H')
+{% endmacro %}
